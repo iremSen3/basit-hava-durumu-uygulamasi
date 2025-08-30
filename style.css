@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.city-input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #00bfff;
+    border-radius: 6px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.search-button, .favCities {
+    padding: 8px 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: #87cefa;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search-button:hover, .favCities:hover {
+    background-color: #00bfff;
+}
+
+.display-fav, .citys-details {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.fav-city {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f8ff;
+    border: 1px solid #87cefa;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.fav-city:hover {
+    background-color: #e0f0ff;
+}
+
+.fav-city button, .add-fav {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.fav-city button:hover, .add-fav:hover {
+    background-color: #87cefa;
+    color: #fff;
+}
+
+.display-fav-details {
+    background-color: #fff8dc;
+    border: 1px solid #ffd700;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.display-fav-details:hover {
+    transform: translateY(-2px);
+}
+
+.loader {
+    display: none;
+    margin: 20px auto;
+    border: 16px solid #2ecbff; 
+    border-top: 16px solid #ffffff; 
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.display-fav-details img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.hidden {
+  display: none;
+}
+
